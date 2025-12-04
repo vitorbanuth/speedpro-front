@@ -1,0 +1,41 @@
+.grid-botoes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  list-style: none;
+  padding: 2rem;
+  margin: 0 auto;
+  max-width: 1000px; /* opcional, para centralizar em telas gigantes */
+}
+
+.grid-botoes li {
+  display: flex;
+  justify-content: center;
+}
+
+.equipe-sobrenos-link {
+  background-color: #FF2B00;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  width: 100%;
+  max-width: 400px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.equipe-sobrenos-link img {
+  width: 24px;
+  height: 24px;
+  /* margin-bottom: 0.5; */
+}

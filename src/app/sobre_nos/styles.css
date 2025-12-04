@@ -1,0 +1,23 @@
+h1 {
+    display: flex;
+    justify-content: center;
+    color: #2b4d8c;}
+
+.sobre-nos {
+    display: flex;
+    align-items: flex-start; /* alinha pelo topo */
+    max-width: 1200px;  /* largura total do bloco */
+    margin: 0 auto;    /* centraliza na tela */
+    gap: 60px;         /* espaço entre texto e imagem */
+    padding: 20px;
+    text-align: justify;
+}
+
+.texto {
+    flex: 1;  /* o texto ocupa o máximo possível */
+}
+
+.sobre-nos img {
+    width: 600px;  
+    height: 400px; 
+}

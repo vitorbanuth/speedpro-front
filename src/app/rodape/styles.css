@@ -1,0 +1,124 @@
+
+footer {
+  background-color: #f5f5f5;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+}
+
+footer h2 {
+  color: #333;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.links-rodape,
+.redes-sociais {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.links-rodape li,
+.redes-sociais li {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 0;
+}
+
+.links-rodape a
+ {
+  color: #333;
+  text-decoration: none;
+  font-weight: 600;
+  margin-left: 0.5rem;
+  font-size: 1rem;
+}
+
+.links-rodape p
+ {
+  color: #333;
+  text-decoration: none;
+  font-weight: 600;
+  margin-left: 0.5rem;
+  font-size: 1rem;
+}
+
+.links-rodape a:hover,
+.redes-sociais a:hover {
+  color: #007bff;
+}
+
+.links-rodape img,
+.redes-sociais img {
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+  display: block;
+}
+
+/* ====== AJUSTES NA CENTRALIZAÇÃO DAS REDES SOCIAIS ====== */
+.redes-sociais {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.redes-sociais li {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Removido o padding que atrapalhava a centralização */
+}
+
+.redes-sociais a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.redes-sociais img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Cores dos círculos */
+.redes-sociais li:nth-child(1) {
+  background-color: blue;
+}
+
+.redes-sociais li:nth-child(2) {
+  background-color: purple;
+}
+
+.redes-sociais li:nth-child(3) {
+  background-color: green;
+}
+
+.redes-sociais li:nth-child(4) {
+  background-color: red;
+}
+
+.redes-sociais li:hover {
+  transform: scale(1.1);
+}
+
+  

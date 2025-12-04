@@ -1,0 +1,129 @@
+/* style.css - Estilo da página de Produtos */
+
+/* Container principal */
+.pagina-produtos {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+/* Título principal */
+.texto-de-produtos {
+  color: #e63900; /* vermelho levemente alaranjado */
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+/* Lista de produtos */
+.lista-produtos {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+/* Cada item da lista */
+.lista-produtos li {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.lista-produtos li:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Imagens dos produtos */
+.lista-produtos img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Informações dos produtos */
+.produto-info {
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.produto-info h2 {
+  color: #000000;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.produto-info p {
+  color: #555;
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  text-align: justify;
+}
+
+/* Botão */
+.botao-add-carrinho {
+  margin-top: auto;
+  background-color: #e63900; 
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.botao-add-carrinho:hover {
+  background-color: #ff4d00;
+  transform: scale(1.05);
+  align-self: self-start;
+}
+
+.botao-see-details {
+  margin-top: auto;
+  background-color: rgb(143, 34, 34);
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.botao-see-details:hover {
+  background-color: #e63900; 
+  transform: scale(1.05);
+  align-self: self-end;
+}
+
+.card-price {
+  font-size: 25px !important;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .lista-produtos {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+
+  .texto-de-produtos {
+    font-size: 1.6rem;
+  }
+}

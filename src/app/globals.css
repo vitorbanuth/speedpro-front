@@ -1,0 +1,26 @@
+:root {
+  --branco-destaque: #ffffff;
+  --azul-claro: #6598f7;
+  --azul-escuro: #2b4d8c;
+  --cinza-fundo: #d9d9d9;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--branco-destaque);
+  
+  /* touch-action: manipulation;
+  overscroll-behavior: none; */
+
+  /* border: 2px solid red; */
+}
+
+h2 {
+  font-weight: 700;
+}
