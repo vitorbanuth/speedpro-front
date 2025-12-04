@@ -6,7 +6,7 @@
       "args": "start -p 80",
       "cwd": "./", 
       "env": {
-        "NEXT_PUBLIC_API_HOST": "https://progweb.ooh.sh",
+        "NEXT_PUBLIC_API_HOST": "https://api.ooh.sh",
         "NODE_ENV": "production"
       }
     }
